@@ -1,0 +1,228 @@
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    direction: ltr; /* Left-to-Right text direction */
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Primary Blue Color */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.cart-btn {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* 1. Hero Section Styling */
+.hero-section {
+    background: url('hero-bg.jpg') center/cover no-repeat; /* Replace with your background image */
+    background-color: #1e83f0;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay for text visibility */
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffc107; /* Yellow color for CTA */
+    color: #333;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+/* 2. Categories & 3. Deals Section Styling */
+.categories-section, .deals-section, .trust-section {
+    padding: 20px 5%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Category Grid */
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+    /* For image placeholders */
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #dc3545; /* Red for sale price */
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.price del {
+    color: #6c757d;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.add-to-cart-btn {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* 4. Trust Section Styling */
+.trust-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 5%;
+    border-top: 1px solid #eee;
+}
+
+.trust-point {
+    max-width: 30%;
+}
+
+.trust-point h3 {
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 5px solid #ffc107;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .category-grid, .trust-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item, .trust-point {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
